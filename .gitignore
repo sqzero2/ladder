@@ -31,3 +31,7 @@ pilot/
 *.docx
 *.pdf
 
+# Audited, de-identified input manifests are the only data allowed in Git.
+!release_data/
+!release_data/*.json
+!release_data/*.jsonl

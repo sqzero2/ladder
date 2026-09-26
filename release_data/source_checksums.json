@@ -1,0 +1,45 @@
+{
+  "conditions": {
+    "cross_model_600": {
+      "learners": 30,
+      "pairs": 600,
+      "questions": 20,
+      "unique_pairs": 600
+    },
+    "main_900": {
+      "learners": 30,
+      "pairs": 900,
+      "questions": 30,
+      "unique_pairs": 900
+    },
+    "refusal_600": {
+      "learners": 30,
+      "pairs": 600,
+      "questions": 20,
+      "unique_pairs": 600
+    },
+    "role_play_600": {
+      "learners": 30,
+      "pairs": 600,
+      "questions": 20,
+      "unique_pairs": 600
+    }
+  },
+  "description": "De-identified synthetic learner states and paired-input selection only",
+  "excluded": [
+    "original question text",
+    "reference answers",
+    "knowledge graph",
+    "model responses",
+    "grader outputs",
+    "human annotation files",
+    "API credentials",
+    "personal paths"
+  ],
+  "source_graph_file": "adjacency_matrix_knowledge_graph.csv",
+  "source_graph_sha256": "357362329d58c8600bc7e47be49f4c3c04b9de6b967bf2b9fecbfa0cc7570b6c",
+  "source_question_file": "LinearAlgebra_hard_ds_steps_parallel.json",
+  "source_question_sha256": "1469ff2d70164cdd8f6f0f4a49d4f9e91fbbad1eaac04196d0bd243fa3b12d40",
+  "synthetic_learners": 30,
+  "upstream": "https://github.com/MAPS-research/SHaPE/tree/main/data"
+}
